@@ -1,0 +1,22 @@
+package com.example.primeiro;
+
+public enum CONEXOES {
+    ORACLE("uniara","123456","oracle.com","ORA-DB-XE"), 
+    MYSQL("root","123456","mysql.com","MYSQL:DB:S"), 
+    POSTEGREES("admin","123456","postgrees.com","POSTGREES:XPT");
+    
+	String user;
+	String pwd;
+	String host;
+	String con;
+    
+    
+    CONEXOES(String user, String pwd, String host, String con) {
+    	this.user = user;
+    	this.pwd = pwd;
+    	this.host = host;
+    	this.con = con;
+    	
+    }
+    
+}
